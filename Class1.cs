@@ -1,27 +1,21 @@
-﻿//wap to accet no. from the user and print sq
+﻿//1 write a program to accept character from the user 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp2
 {
-     class Class1
+    internal class Class1
     {
-        //public static void Main()
+        //static void Main()
         //{
-        //    int num, sq;
-        //    Console.WriteLine("Entrt Number");
-        //    num = Convert.ToInt32(Console.ReadLine());
-        //    sq = num * num;
-        //    Console.WriteLine("Square= "+sq);
+        //    char ch;
+        //    Console.WriteLine("Enter Charactre");
+        //    ch = Convert.ToChar(Console.ReadLine());
+        //    Console.WriteLine("Ch=" + ch);
         //    Console.WriteLine();
-
-
-
         //}
-         
-
     }
 }
