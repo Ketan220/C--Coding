@@ -1,0 +1,27 @@
+﻿// goto to check whether no . is even or odd
+/*using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    internal class Class51
+    {
+        static void Main(string[] args)
+        {
+            int number = 4;
+            if (number % 2 == 0) goto Even;
+            Console.WriteLine("no is odd");
+            goto End;
+        Even:
+            Console.WriteLine("no is even");
+        End:;
+
+            Console.ReadLine();
+
+
+        }
+    }
+}*/
