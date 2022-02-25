@@ -1,4 +1,5 @@
-﻿//C# Encapsulation
+﻿/*C# Sealed method
+The sealed method in C# cannot be overridden further. It must be used with override keyword in method.*/
 /*using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,30 +8,35 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    class Student
+    class person
     {
-        // Creating setter and getter for each property  
-        public string ID { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
+        public virtual void display()
+        {
+            Console.WriteLine("Hello person");
+        }
     }
+    class student:person
+    {
+        public sealed override void display()
+        {
+            Console.WriteLine("Hello Student");
+        }
+    }
+    class parttime:student
+    {
+        //public override void display() //error since sealed
+        //{
+        //    Console.WriteLine("hello");
+        //}
 
+    }
     internal class Class183
     {
-        static void Main(string[] args)
+       public static void Main()
         {
-            Student student = new Student();
-            // Setting values to the properties  
-            student.ID = "101";
-            student.Name = "Mohan Ram";
-            student.Email = "mohan@example.com";
-
-
-            // getting values  
-            Console.WriteLine("ID = " + student.ID);
-            Console.WriteLine("Name = " + student.Name);
-            Console.WriteLine("Email = " + student.Email);
+            parttime p = new parttime();
+            p.display();
         }
-
     }
+
 }*/
