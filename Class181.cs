@@ -1,4 +1,5 @@
-﻿/*using System;
+﻿//C# sealed class cannot be derived by any class. Let's see an example of sealed class in C#.
+/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,35 +7,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    interface bank
+    sealed class Animal
     {
-        string deposit(int actno, int amount);
-    }
-    class account
-    {
-        public int actno;
-        public int balance=1000;
-    }
-    class saving:account,bank
-    {
-        public string deposit(int actno,int amount)
-        {
-            this.actno = actno;
-            balance = balance + amount;
-            return "Amount succefully deposit in saving class,Balance is=" + balance; 
 
-        }
+    }
+    class dog:Animal//error wil come
+    {
+
     }
     internal class Class181
     {
         public static void Main()
         {
-            bank b;
 
-            b= new saving();
-
-            string res = b.deposit(121, 2000);
-            Console.WriteLine(res);
         }
     }
 }*/
