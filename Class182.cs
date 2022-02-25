@@ -1,5 +1,4 @@
-﻿//another example
-/*using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,48 +6,29 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    interface bank
+    sealed class Animal
     {
-        String deposit(int actno, int amt);
-        String withdraw(int actno, int amt);
-    }
-    class account
-    {
-        public int actno;
-        public int bal = 1000;
-        public String showbalance()
+        public void eat()
         {
-            return "bal is " + bal;
+            Console.WriteLine("Eating.......");
         }
     }
-    class saving : account, bank
+    class dog:Animal
     {
-
-        public String deposit(int actno, int amt)
+        public void run()
         {
-            this.actno = actno;
-            bal = bal + amt;
-            return "deposited successfully successfully ,bal is " + bal;
-        }
-        public String withdraw(int actno, int amt)
-        {
-            this.actno = actno;
-            bal = bal - amt;
-            return "withdraw successfully ,bal is " + bal;
+            Console.WriteLine("Runnimg.......");
         }
     }
-    class Program
+    internal class Class182
     {
         public static void Main()
         {
-            saving b;
-            b = new saving();
-            String res = b.deposit(1, 200);
-            Console.WriteLine(res);
-
-            res = b.withdraw(1, 100);
-            Console.WriteLine(res);
-            Console.WriteLine(b.showbalance());
+            dog d=new dog();
+            d.eat();
+            d.run();
         }
     }
 }*/
+
+//OUTPUT:-Compile Time Error: 'Dog': cannot derive from sealed type 'Animal'
